@@ -1,0 +1,115 @@
+{
+  "sommaire": [
+    {
+      "cat": "Organisation et transformation de la matière"
+    },
+    {
+      "num": "01",
+      "title": "La mole",
+      "partie": "Partie 1",
+      "file": "1ere-spe/ch01-mole/index.html",
+      "hidden": false
+    },
+    {
+      "num": "01",
+      "title": "Dosage par étalonnage",
+      "partie": "Partie 2",
+      "hidden": true
+    },
+    {
+      "num": "02",
+      "title": "Oxydoréduction",
+      "hidden": true
+    },
+    {
+      "num": "03",
+      "title": "Avancement",
+      "hidden": true
+    },
+    {
+      "num": "04",
+      "title": "Titrages",
+      "hidden": true
+    },
+    {
+      "num": "05",
+      "title": "De la structure à la polarité",
+      "hidden": true
+    },
+    {
+      "num": "06",
+      "title": "Cohésion de la matière",
+      "hidden": true
+    },
+    {
+      "num": "07",
+      "title": "Structure des entités organiques",
+      "hidden": true
+    },
+    {
+      "num": "08",
+      "title": "Synthèses chimiques",
+      "hidden": true
+    },
+    {
+      "num": "09",
+      "title": "Combustions",
+      "hidden": true
+    },
+    {
+      "cat": "Mouvements et interactions"
+    },
+    {
+      "num": "10",
+      "title": "Interactions et champs",
+      "hidden": true
+    },
+    {
+      "num": "11",
+      "title": "Fluides au repos",
+      "file": "1ere-spe/ch11-fluides/index.html",
+      "hidden": true
+    },
+    {
+      "num": "12",
+      "title": "Mouvement d'un système",
+      "hidden": true
+    },
+    {
+      "cat": "Énergie, conversions et transferts"
+    },
+    {
+      "num": "13",
+      "title": "Énergie des systèmes électriques",
+      "hidden": true
+    },
+    {
+      "num": "14",
+      "title": "Énergie mécanique",
+      "hidden": true
+    },
+    {
+      "cat": "Ondes et signaux"
+    },
+    {
+      "num": "15",
+      "title": "Ondes mécaniques",
+      "hidden": true
+    },
+    {
+      "num": "16",
+      "title": "Lentilles minces",
+      "hidden": true
+    },
+    {
+      "num": "17",
+      "title": "Couleurs",
+      "hidden": true
+    },
+    {
+      "num": "18",
+      "title": "Lumière, onde et particules",
+      "hidden": true
+    }
+  ]
+}

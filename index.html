@@ -216,6 +216,9 @@ const SOMMAIRES = {
 };
 
 const PAGES = {
+  '5eme': [
+    { file:'5eme/documents/index.html', title:'Documents des chapitres', sub:'Cours, activités, exercices et corrigés · liens Drive', tag:'Tous les chapitres', color:'#6b3a1c' }
+  ],
   'outils': [
     { file:'Outils/oscillateur-labo-a3.html', title:'Oscillateur harmonique', sub:'Masse-ressort · fréquence · énergie', tag:'Mécanique', color:'#1c3d6e' },
     { file:'Outils/masse-volumique-labo.html', title:'Masse volumique', sub:'ρ × V = m · visualisation à l\'échelle', tag:'Matière', color:'#2a5c3a' },
@@ -272,7 +275,7 @@ function renderAccueil(){
   const blocs = TABS_LEFT.filter(t=>t.id!=='accueil').map(t=>{
     const chaps=SOMMAIRES[t.id]||[], pages=PAGES[t.id]||[];
     const visibles=chaps.filter(c=>c.num&&!c.hidden);
-    const items = visibles.length ? visibles.map(c=>chapHTML(c,t.color)).join('')
+    const items = visibles.length ? visibles.map(c=>chapHTML(c,t.color)).join('')+pages.map(cardHTML).join('')
       : pages.length ? pages.map(cardHTML).join('')
       : '<p class="empty">Aucune page pour le moment.</p>';
     return '<section class="bloc" style="--c:'+t.color+'">'
@@ -289,7 +292,7 @@ function renderAccueil(){
 function renderSection(ti){
   const chaps=SOMMAIRES[ti.id]||[], pages=PAGES[ti.id]||[];
   const hasChaps=chaps.some(c=>c.num);
-  const items = hasChaps ? chaps.map(c=>chapHTML(c,ti.color)).join('')
+  const items = hasChaps ? chaps.map(c=>chapHTML(c,ti.color)).join('')+pages.map(cardHTML).join('')
     : pages.length ? pages.map(cardHTML).join('')
     : '<p class="empty">Aucune page pour le moment.</p>';
   return '<div class="hero" style="--c:'+ti.color+'"><div class="kicker">'+(hasChaps?'Liste des chapitres':'Physique-chimie')+'</div>'
